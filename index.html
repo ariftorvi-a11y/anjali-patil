@@ -3,65 +3,103 @@
 <head>
 <title>Anjali Patil | Portfolio</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
+    margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
     margin: 0;
-    background: #f4f6f8;
-    color: #333;
 }
 
-header {
-    background: linear-gradient(135deg, #000, #444);
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 40px;
-}
-
-header p {
-    font-size: 18px;
-    opacity: 0.8;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.card {
-    background: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-    border-left: 4px solid #000;
-    padding-left: 10px;
-}
-
-.skills span {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 8px 12px;
-    margin: 5px;
-    border-radius: 20px;
+nav a {
+    color: #94a3b8;
+    margin-left: 20px;
+    text-decoration: none;
     font-size: 14px;
 }
 
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #6366f1;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* SECTION */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 10px;
+}
+
+/* CARD */
+.card {
+    background: #020617;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #000;
-    color: #fff;
+    background: #020617;
     margin-top: 40px;
 }
 </style>
@@ -70,49 +108,95 @@ footer {
 
 <body>
 
-<header>
-    <h1>Anjali Patil</h1>
-    <p>Business Development Executive | Sales & Growth Specialist</p>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <h2>Anjali</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<section>
+<!-- HERO -->
+<div class="hero">
+    <h1>Anjali Patil</h1>
+    <p>Business Development Executive | Driving Growth & Client Success</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <h2>About Me</h2>
     <div class="card">
-        <h2>About Me</h2>
         <p>
-            I am a results-driven Business Development Executive with experience in customer acquisition,
-            sales strategy, and client relationship management. I focus on driving growth,
-            building strong connections, and delivering consistent results.
+            A results-driven Business Development Executive with experience in customer acquisition,
+            sales strategy, and relationship management. Focused on driving revenue growth,
+            improving client engagement, and delivering measurable results.
         </p>
     </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section" id="experience">
+    <h2>Experience</h2>
 
     <div class="card">
-        <h2>Experience</h2>
-        <p><b>OLA Electric Pvt Ltd</b><br>
-        Business Development Executive</p>
-
-        <p><b>KAP Call Centre (Amazon B2B)</b><br>
-        Business Development Executive</p>
+        <h3>Altrust Pvt. Ltd.</h3>
+        <p><b>Business Associate | Oct 2025 – Present</b></p>
+        <ul>
+            <li>Handled customer interactions via chat with quick resolutions</li>
+            <li>Managed escalations while maintaining service quality</li>
+            <li>Ensured high customer satisfaction</li>
+        </ul>
     </div>
 
     <div class="card">
-        <h2>Skills</h2>
-        <div class="skills">
-            <span>Lead Generation</span>
-            <span>Sales Strategy</span>
-            <span>Customer Acquisition</span>
-            <span>Client Management</span>
-        </div>
+        <h3>OLA Electric Pvt Ltd</h3>
+        <p><b>Business Development Executive | Aug 2024 – Sep 2025</b></p>
+        <ul>
+            <li>Increased customer base through strategic planning</li>
+            <li>Participated in campaigns and business events</li>
+            <li>Built strong client relationships</li>
+        </ul>
     </div>
 
     <div class="card">
-        <h2>Contact</h2>
+        <h3>KAP Call Centre (Amazon B2B)</h3>
+        <p><b>Business Development Executive | Feb 2023 – Jul 2024</b></p>
+        <ul>
+            <li>Guided customers through onboarding and sales</li>
+            <li>Handled calls and email communication</li>
+            <li>Improved conversion rates through follow-ups</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Lead Generation</span>
+        <span>Sales Strategy</span>
+        <span>Customer Acquisition</span>
+        <span>Client Management</span>
+        <span>Communication</span>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card">
         <p>Email: anjalirkpatil77@gmail.com</p>
+        <p>Phone: 7760630250</p>
         <p>LinkedIn: linkedin.com/in/anjali-patil-77a82925b</p>
     </div>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Anjali Patil | Portfolio</p>
+    <p>© 2026 Anjali Patil</p>
 </footer>
 
 </body>
